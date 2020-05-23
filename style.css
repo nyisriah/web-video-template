@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+img{
+	width: 100%;
+}
+
+body {
+	background-color:#ddd;
+	font-size: 18px;
+	font-family:'Raleway', arial, helvetica, sans-serif;
+	margin: 50px;
+}
+
+.header {
+	display: grid;
+	grid-area: 
+	'banner banner fitur1'
+	'banner banner fitur2'
+}
+
+.banner {
+	grid-area: banner;
+	min-height:350px;
+	background-image:url(img/tv3.jpg);
+	background-position: center;
+	padding: 50px;
+}
+.banner h2, .banner p {
+	display: none;
+}
+.fitur {
+	background-color: #000;
+	color: white;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	cursor: pointer;
+}
+
+fitur1 {
+	grid-area: fitur1;
+	background-image: url(img/tv1);
+	background-size: cover;
+}
+fitur1 {
+	grid-area: fitur2;
+	background-image: url(img/tv2);
+	background-size: cover;
+}
+
+.fitur .harga {
+	font-size: 3em;
+	font-weight: 200px;
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: ifr 2fr;
+}
+.menu .brand {
+	font-size: 1.3em;
+	color: #333;
+	align-items: center;
+	background-color: orange;
+}
+.menu ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 5px;
+}
+.menu a {
+	display: black;
+	background-color: #000;
+	color: white
+	text-decoration:none;
+	text-align: center;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+
+}
+
+@media screen (max-width: 1024px) {
+
+}
+
+@media screen (max-width: 1024px) {
+	
+}
+
+@media screen (max-width: 1024px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
